@@ -94,6 +94,67 @@ section p {
 	margin: 0;
 }
 
+/* --------
+	 GRIDS 
+	------- */
+
+[class^=grid-col-'] {
+	float: left;
+	padding-right: 2rem;
+}
+
+[class^=grid-col-']:last-of-type {
+	padding-right: 0;
+}
+
+.grid-row::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.grid-col-1of2 {
+	width: 100%;
+}
+
+.grid-col-1of3 {
+	width: 100%;
+}
+
+.grid-col-1of4 {
+	width: 100%;
+}
+
+.grid-col-1of5 {
+	width: 100%;
+}
+
+.grid-col-1of6 {
+	width: 100%;
+}
+
+@media (min-width: 30em) {
+	.grid-col-1of2 {
+		width: 50%;
+	}
+
+	.grid-col-1of3 {
+		width: 33.3%;
+	}
+
+	.grid-col-1of4 {
+		width: 25%;
+	}
+
+	.grid-col-1of5 {
+		width: 20%;
+	}
+
+	.grid-col-1of6 {
+		width: 16.67%;
+	}
+}
+
 
 /* ------------------------
 	 INTERACTIVE ELEMENTS 

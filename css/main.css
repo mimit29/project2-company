@@ -423,6 +423,7 @@ ol li:before{
 	display: inline-block;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	box-shadow: 0 0 10px 1px #e2e2e2; /* taken from: https://css-tricks.com/snippets/css/css-box-shadow/ */
 }
 
 .logo {

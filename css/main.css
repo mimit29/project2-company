@@ -94,9 +94,6 @@ section p {
 .footer {
 	background-color: #1f1f1f;
 	padding: 2rem 0;
-	position: static;
-	bottom: 0;
-	width: 100%;
 }
 
 .footer-text {
@@ -285,6 +282,10 @@ input[type=text] {
 input[type=text]:focus {
 	outline-width: 0; /*taking away blue border when focus from: http://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
 	border: 2px solid #efb99f;
+}
+
+.form-pad {
+	padding-right: 2rem;
 }
 
 /* SUBMIT & RESET BUTTON */

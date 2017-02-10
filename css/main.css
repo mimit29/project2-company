@@ -108,10 +108,12 @@ section p {
 [class^='grid-col-'] {
   float: left;
   padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 [class^='grid-col-']:last-of-type {
   padding-right: 0;
+  padding-bottom: 0.5rem;
 }
 
 .grid-row::after {
@@ -406,6 +408,10 @@ ol li:before{
 		text-align: left;
 		display: inline-block;
 		padding-left: 4em;
+	}
+
+	.logo:hover, .logo:focus {
+		text-decoration: none;
 	}
 
 	.navbar {

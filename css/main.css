@@ -25,6 +25,10 @@ section p {
 	margin-top: 4rem;
 }
 
+.container {
+	padding: 0 9rem;
+}
+
 .code-block { /*border style taken from: http://www.w3schools.com/css/css_border.asp*/
   width: 100%;
   display: block;
@@ -39,7 +43,7 @@ section p {
 	width: 100%;
 	height: 400px;
 	background-color: #deece2;
-	padding: 7rem 9rem;
+	padding: 7rem 0;
 }
 
 .header-text {
@@ -50,22 +54,29 @@ section p {
 	letter-spacing: 0.5rem;
 }
 
+/* Page Footer Style */
+.footer {
+	background-color: #fff;
+	padding: 5rem 0;
+}
+
 /* Sections */
 
 .section-white {
 	background-color: #Fff;
-	padding: 5rem 9rem;
+	padding: 5rem 0;
 }
 
 .section-pink {
 	background-color: #Efb99f;
-	padding: 5rem 9rem;
+	padding: 5rem 0;
 }
 
 .section-blue {
 	background-color: #Cbd4ca;
-	padding: 5rem 9rem;
+	padding: 5rem 0;
 }
+
 /* ------------------------
 	 INTERACTIVE ELEMENTS 
 	----------------------- */
@@ -244,7 +255,7 @@ ol li:before{
 	margin: 0;
 	padding: 1em 1em;
 	overflow: hidden;
-	background-color: #cbd4ca;
+	background-color: #fff;
 	position: fixed;
 	top: 0;
 	width: 100%;

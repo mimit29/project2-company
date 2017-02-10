@@ -3,6 +3,30 @@ body {
 
 }
 
-h1 {
-	font-family: 'Overpass', sans-serif;
+/* ------------------------
+	 INTERACTIVE ELEMENTS 
+	----------------------- */
+
+.button-default {
+	display: inline-block;
+	padding: 1rem 2rem;
+	color: #FFF;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	background-color: #efb99f;
+	border: none;
+	border-radius: 0.5rem;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
 }
+
+.button-default:hover, .button-default:focus {
+	background-color: #be7f6b;
+	color: #FFF;
+}
+
+/* WHY IS IT NOT SHOWING */
+
+/*let's try again */

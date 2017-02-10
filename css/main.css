@@ -248,6 +248,8 @@ ol li:before{
 	.navbar-element {
 		float: right;
 		width:10%;
+		position: fixed;
+		top: 0;
 	}
 
 	.navbar-logo {

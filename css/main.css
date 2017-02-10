@@ -32,6 +32,14 @@ body {
 	 TEXT ELEMENTS
 	----------------------- */
 
+h1 {
+	font-weight: 700;
+	font-size: 36px;
+	color: #BE7F6B;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
 
 /* WHY IS IT NOT SHOWING */
 

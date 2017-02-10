@@ -131,3 +131,22 @@ ol, ul {
   padding-bottom: 5px;
 }
 
+ol
+{
+  counter-reset: i 0;
+}
+
+ol li:before{
+  content: counter(i);
+  counter-increment: i;
+  padding-right: 10px;
+  color: #Efb99f;
+  font-style: italic;
+}
+
+.numbered-style
+{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+

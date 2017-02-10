@@ -98,13 +98,13 @@ section p {
 	 GRIDS 
 	------- */
 
-[class^=grid-col-'] {
-	float: left;
-	padding-right: 2rem;
+[class^='grid-col-'] {
+  float: left;
+  padding-right: 2rem;
 }
 
-[class^=grid-col-']:last-of-type {
-	padding-right: 0;
+[class^='grid-col-']:last-of-type {
+  padding-right: 0;
 }
 
 .grid-row::after {
@@ -154,7 +154,6 @@ section p {
 		width: 16.67%;
 	}
 }
-
 
 /* ------------------------
 	 INTERACTIVE ELEMENTS 

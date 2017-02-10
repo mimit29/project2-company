@@ -92,6 +92,51 @@ input[type=text]:focus {
 	border: 2px solid #efb99f;
 }
 
+/* SUBMIT & RESET BUTTON */
+.button-submit {
+	display: inline-block;
+	padding: 0.7rem 2rem;
+	color: #FFF;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	border-radius: 0.5rem;
+	background-color: #efb99f;
+	border: none;
+	text-decoration: none;
+	 -webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+}
+
+.button-submit:hover, .button-submit:focus {
+	background-color: #be7f6b;
+	color: #fff;
+	text-decoration: none;
+}
+
+.button-reset {
+	display: inline-block;
+	padding: 0.7rem 2rem;
+	color: #efb99f;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	border: 1px solid;
+	border-radius: 0.5rem;
+	background-color: transparent;
+	border-color: #efb99f;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+}
+
+.button-reset:hover, .button-reset:focus {
+	background-color: #efb99f;
+	color: #fff;
+	text-decoration: none;
+}
+
+
 /* ----------------
 	 TEXT ELEMENTS
 	--------------- */
@@ -111,6 +156,90 @@ h1 {
 	letter-spacing: 0.5px;
 	max-width: 400px;
 	font-size: 14px;
+}
+
+/* --------------------
+	 COMBINED ELEMENTS
+	------------------- */
+
+
+/* NAVBAR Styling taken from: http://www.w3schools.com/css/css_navbar.asp */
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 1em 1em;
+	overflow: hidden;
+	background-color: #cbd4ca;
+}
+
+.navbar-element {
+	width: 100%;
+	float: left;
+	float: right;
+}
+
+.navbar-logo {
+	width: 100%;
+	text-align: center;
+	color: #ac9085;
+	font-weight: 500;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+.navbar-link {
+	text-align: center;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.navbar-link:hover, .navbar-link:focus {
+	color: #be7f6b;
+	text-align: center;
+}
+
+.is-active {
+	color: #be7f6b;
+}
+
+@media (min-width: 70em) {
+	.navbar-element {
+		float: right;
+		width:10%;
+	}
+
+	.navbar-logo {
+		float: left;
+		width: 25%;
+		color: #ac9085;
+		font-weight: 500;
+		font-size: 30px;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	.navbar-link {
+		display: block;
+		color: #333;
+		text-transform: uppercase;
+		font-size: 15px;
+		padding: 1em;
+		text-decoration: none;
+		letter-spacing: 0.01em;
+	}
+
+	.navbar-link:hover, .navbar-link:focus {
+		color: #be7f6b;
+		text-decoration: none;
+	}
+
+	.is-active {
+		color: #be7f6b;
+		text-decoration: none;
+	}
 }
 
 /*styling for lists*/

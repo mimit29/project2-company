@@ -56,28 +56,6 @@ section p {
 	color: #FFF;
 }
 
-
-/* ----------------
-	 TEXT ELEMENTS
-	--------------- */
-
-h1 {
-	font-weight: 700;
-	font-size: 36px;
-	color: #BE7F6B;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-}
-
-.para {
-	font-weight: 300;
-	letter-spacing: 0.5px;
-	max-width: 400px;
-	font-size: 14px;
-}
-
-
-/* WHY IS IT NOT SHOWING */
 /* DEFAULT IN-TEXT LINK */
 a {
 	color: #be7f6b;
@@ -112,4 +90,23 @@ input[type=text] {
 input[type=text]:focus {
 	outline-width: 0; /*taking away blue border when focus from: http://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
 	border: 2px solid #efb99f;
+}
+
+/* ----------------
+	 TEXT ELEMENTS
+	--------------- */
+
+h1 {
+	font-weight: 700;
+	font-size: 36px;
+	color: #BE7F6B;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.para {
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	max-width: 400px;
+	font-size: 14px;
 }

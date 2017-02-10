@@ -94,6 +94,9 @@ section p {
 .footer {
 	background-color: #1f1f1f;
 	padding: 2rem 0;
+	position: static;
+	bottom: 0;
+	width: 100%;
 }
 
 .footer-text {
@@ -107,13 +110,13 @@ section p {
 
 [class^='grid-col-'] {
   float: left;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 [class^='grid-col-']:last-of-type {
   padding-right: 0;
-  padding-bottom: 10px;
+  padding-bottom: 0.5rem;
 }
 
 .grid-row::after {
@@ -127,6 +130,10 @@ section p {
 }
 
 .grid-col-1of3 {
+	width: 100%;
+}
+
+.grid-col-2of3 {
 	width: 100%;
 }
 
@@ -167,6 +174,10 @@ section p {
 		width: 33.3%;
 	}
 
+	.grid-col-2of3 {
+		width: 66.6%;
+	}
+
 	.grid-col-1of4 {
 		width: 25%;
 	}
@@ -204,6 +215,7 @@ section p {
 .button-default:hover, .button-default:focus {
 	background-color: #be7f6b;
 	color: #FFF;
+	text-decoration: none;
 }
 
 /* BUTTON BUBBLETEA */
@@ -232,6 +244,10 @@ section p {
 
 .bubbletea {
 	width: 100%;
+}
+
+.drink-pad {
+	margin-left: 3rem;
 }
 
 
@@ -327,6 +343,16 @@ input[type=text]:focus {
 	color: #BE7F6B;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
+	margin-top: 0;
+}
+
+.sub-heading {
+	font-weight: 300;
+	font-size: 18px;
+	color: #5d5d5d;
+	letter-spacing: 0.2em;
+	font-style: italic;
+	margin-bottom: 0;
 }
 
 /*styling for content/parahraphs */

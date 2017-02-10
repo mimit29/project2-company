@@ -92,6 +92,51 @@ input[type=text]:focus {
 	border: 2px solid #efb99f;
 }
 
+/* SUBMIT & RESET BUTTON */
+.button-submit {
+	display: inline-block;
+	padding: 0.7rem 2rem;
+	color: #FFF;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	border-radius: 0.5rem;
+	background-color: #efb99f;
+	border: none;
+	text-decoration: none;
+	 -webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+}
+
+.button-submit:hover, .button-submit:focus {
+	background-color: #be7f6b;
+	color: #fff;
+	text-decoration: none;
+}
+
+.button-reset {
+	display: inline-block;
+	padding: 0.7rem 2rem;
+	color: #efb99f;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	border: 1px solid;
+	border-radius: 0.5rem;
+	background-color: transparent;
+	border-color: #efb99f;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+}
+
+.button-reset:hover, .button-reset:focus {
+	background-color: #efb99f;
+	color: #fff;
+	text-decoration: none;
+}
+
+
 /* ----------------
 	 TEXT ELEMENTS
 	--------------- */

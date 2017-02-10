@@ -209,6 +209,8 @@ ol li:before{
 	padding: 1em 1em;
 	overflow: hidden;
 	background-color: #cbd4ca;
+	position: fixed;
+	top: 0;
 }
 
 .navbar-element {
@@ -248,8 +250,6 @@ ol li:before{
 	.navbar-element {
 		float: right;
 		width:10%;
-		position: fixed;
-		top: 0;
 	}
 
 	.navbar-logo {

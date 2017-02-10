@@ -410,6 +410,10 @@ ol li:before{
 		padding-left: 4em;
 	}
 
+	.logo:hover, .logo:focus {
+		text-decoration: none;
+	}
+
 	.navbar {
 		width: 65%;
 		display: inline-block;

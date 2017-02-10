@@ -28,9 +28,9 @@ body {
 }
 
 
-/* ------------------------
+/* ----------------
 	 TEXT ELEMENTS
-	----------------------- */
+	--------------- */
 
 h1 {
 	font-weight: 700;
@@ -38,6 +38,13 @@ h1 {
 	color: #BE7F6B;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
+}
+
+.para {
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	max-width: 400px;
+	font-size: 14px;
 }
 
 

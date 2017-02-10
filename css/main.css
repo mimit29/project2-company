@@ -108,6 +108,7 @@ section p {
 [class^='grid-col-'] {
   float: left;
   padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 [class^='grid-col-']:last-of-type {

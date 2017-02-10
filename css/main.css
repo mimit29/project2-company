@@ -274,7 +274,7 @@ ol li:before{
 	font-size: 20px;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	padding: 0.2em;
+	padding: 0.2em 5em;
 	-webkit-transition: background-color 0.5s ease-out;
 		transition: background-color 0.5s ease-out;
 }
@@ -286,7 +286,7 @@ ol li:before{
 	font-size: 20px;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	padding: 0.2em;
+	padding: 0.2em 5em;
 	text-decoration: none;
 }
 

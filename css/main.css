@@ -435,4 +435,9 @@ ol li:before{
 		text-decoration: none;
 	}
 
+	.is-active {
+		color: #Be7f6b;
+		text-decoration: none;
+	}
+
 }

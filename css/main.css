@@ -26,8 +26,15 @@ section p {
 }
 
 .container {
-	width: 55%;
-	margin: auto; /* taken from http://www.w3schools.com/css/css_align.asp */
+	width: 90%;
+	margin: auto;
+}
+
+@media (min-width: 50em) {
+	.container {
+		width: 55%;
+		margin: auto; /* taken from http://www.w3schools.com/css/css_align.asp */
+	}
 }
 
 .code-block { /*border style taken from: http://www.w3schools.com/css/css_border.asp*/

@@ -22,7 +22,7 @@ section p {
 }
 
 .main {
-	margin-top: 4rem;
+	margin-top: 5rem;
 }
 
 .container {
@@ -266,65 +266,106 @@ ol li:before{
 	------------------- */
 
 
-/* NAVBAR Styling taken from: http://www.w3schools.com/css/css_navbar.asp */
-.navbar {
-	list-style-type: none;
-	margin: 0;
-	padding: 1em 1em;
-	overflow: hidden;
+/* NAVBAR */
+
+.nav {
+	width: 100%;
 	background-color: #fff;
 	position: fixed;
 	top: 0;
+	height: 7rem;
+	display: inline-block;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.logo {
 	width: 100%;
-}
-
-.navbar-element {
-	float: right;
-	width:10%;
-}
-
-.navbar-logo {
-	float: left;
-	width: 25%;
-	color: #ac9085;
-	font-weight: 300;
-	font-size: 20px;
+	color: #c29f96;
+	font-size: 14px;
 	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	padding: 0.2em 5em;
-	-webkit-transition: background-color 0.5s ease-out;
-		transition: background-color 0.5s ease-out;
+	display: inline-block;
+	text-align: center;
 }
 
-.navbar-logo:hover, .navbar-logo:focus {
-	text-transform: none;
-	color: #5d5d5d;
-	font-weight: 300;
-	font-size: 20px;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	padding: 0.2em 5em;
-	text-decoration: none;
+.navbar {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	padding-top: 0.5rem;
+	margin: auto;
+
 }
 
-.navbar-link {
-	display: block;
-	color: #333;
-	text-transform: uppercase;
+.nav-link {
+	margin-left: 2em;
 	font-size: 13px;
-	padding: 1em;
-	text-decoration: none;
-	letter-spacing: 0.01em;
-}
-
-.navbar-link:hover, .navbar-link:focus {
-	color: #be7f6b;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #5d5d5d;
 	text-decoration: none;
 }
 
-.is-active {
-	color: #be7f6b;
-	text-decoration: none;
+.nav-link:last-of-type {
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
+@media (min-width: 60em) {
 
+
+	.nav {
+		width: 100%;
+		background-color: #fff;
+		position: fixed;
+		top: 0;
+		height: 5rem;
+		display: inline-block;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.nav-element:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.logo {
+		width: 35%;
+		color: #c29f96;
+		font-size: 24px;
+		text-transform: uppercase;
+		text-align: left;
+		display: inline-block;
+		padding-left: 4em;
+	}
+
+	.navbar {
+		width: 65%;
+		display: inline-block;
+		float: right;
+		text-align: right; /* text-align right snippet taken from: http://stackoverflow.com/questions/32701920/2-divs-float-right-not-in-a-right-order */
+		padding-top: 0.5rem;
+	}
+
+	.nav-link {
+		margin-left: 3em;
+		font-size: 13px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #5d5d5d;
+		text-decoration: none;
+	}
+
+	.nav-link:last-of-type {
+		margin-left: 3em;
+		margin-right: 4em;
+	}
+
+	.nav-link:hover, .nav-link:focus {
+		color: #Be7f6b;
+		text-decoration: none;
+	}
+
+}

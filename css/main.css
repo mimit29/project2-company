@@ -113,6 +113,7 @@ section p {
 
 [class^='grid-col-']:last-of-type {
   padding-right: 0;
+  padding-bottom: 0.5rem;
 }
 
 .grid-row::after {

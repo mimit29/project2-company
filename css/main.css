@@ -211,6 +211,7 @@ ol li:before{
 	background-color: #cbd4ca;
 	position: fixed;
 	top: 0;
+	width: 100%;
 }
 
 .navbar-element {

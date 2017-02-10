@@ -39,11 +39,27 @@ section p {
   border-color: #ccc;
 }
 
-/* Page Heading Style */
-.header {
+/* Headings Style */
+.header-peri {
 	width: 100%;
 	height: 400px;
 	background-color: #deece2;
+	padding: 7rem 0;
+}
+
+
+.header-white {
+	background-color: #Fff;
+	padding: 7rem 0;
+}
+
+.header-pink {
+	background-color: #Efb99f;
+	padding: 7rem 0;
+}
+
+.header-blue {
+	background-color: #Cbd4ca;
 	padding: 7rem 0;
 }
 
@@ -55,28 +71,29 @@ section p {
 	letter-spacing: 0.5rem;
 }
 
-/* Page Footer Style */
-.footer {
+/* Sections Style */
+
+.section-white {
 	background-color: #fff;
 	padding: 5rem 0;
 }
 
-/* Sections */
-
-.section-white {
-	background-color: #Fff;
+.section-grey {
+	background-color: #ddd;
 	padding: 5rem 0;
 }
 
-.section-pink {
-	background-color: #Efb99f;
-	padding: 5rem 0;
+/* Page Footer Style */
+.footer {
+	background-color: #1f1f1f;
+	padding: 2rem 0;
 }
 
-.section-blue {
-	background-color: #Cbd4ca;
-	padding: 5rem 0;
+.footer-text {
+	color: #636363;
+	margin: 0;
 }
+
 
 /* ------------------------
 	 INTERACTIVE ELEMENTS 

@@ -96,6 +96,7 @@ input[type=text]:focus {
 	 TEXT ELEMENTS
 	--------------- */
 
+/* styling for headings*/
 h1 {
 	font-weight: 700;
 	font-size: 36px;
@@ -104,9 +105,48 @@ h1 {
 	text-transform: uppercase;
 }
 
+/*styling for content/parahraphs */
 .para {
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: 0.5px;
 	max-width: 400px;
 	font-size: 14px;
 }
+
+/*styling for lists*/
+ol, ul {
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	font-size: 14px;
+	list-style-type: none;
+}
+
+.bullet-style:before
+{
+  content: "•";
+  color: #Efb99f;
+  display: inline-block;
+  width: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+ol
+{
+  counter-reset: i 0;
+}
+
+ol li:before{
+  content: counter(i);
+  counter-increment: i;
+  padding-right: 10px;
+  color: #Efb99f;
+  font-style: italic;
+}
+
+.numbered-style
+{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+

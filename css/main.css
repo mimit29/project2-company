@@ -3,7 +3,7 @@ body {
 	margin: 0;
 }
 
-* {
+*,*:after, *:before {
   box-sizing: border-box;
 }
 
@@ -107,11 +107,13 @@ section p {
 
 [class^='grid-col-'] {
   float: left;
-  padding-right: 2rem;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 [class^='grid-col-']:last-of-type {
   padding-right: 0;
+  padding-bottom: 10px;
 }
 
 .grid-row::after {
@@ -138,6 +140,22 @@ section p {
 
 .grid-col-1of6 {
 	width: 100%;
+}
+
+.grid-heading {
+	color: #be7f6b;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 0.5rem;
+	margin: 0;
+}
+
+.grid-description {
+	color: #5d5d5d;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding-top: 0.2rem;
 }
 
 @media (min-width: 30em) {
@@ -187,6 +205,35 @@ section p {
 	background-color: #be7f6b;
 	color: #FFF;
 }
+
+/* BUTTON BUBBLETEA */
+.button-bubbletea {
+	display: inline-block;
+	width: 100%;
+	padding: 0.7rem 0;
+	color: #FFF;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #efb99f;
+	border: none;
+	border-radius: 0.5rem;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+}
+
+.button-bubbletea:hover, .button-bubbletea:focus {
+	background-color: #be7f6b;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.bubbletea {
+	width: 100%;
+}
+
 
 /* DEFAULT IN-TEXT LINK */
 a {
@@ -348,11 +395,20 @@ ol li:before{
 
 .logo {
 	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+.logo-link {
 	color: #c29f96;
 	font-size: 14px;
 	text-transform: uppercase;
-	display: inline-block;
-	text-align: center;
+	text-decoration: none;
+}
+
+.logo-link:hover, .logo-link:focus {
+	color: #5d5d5d;
+	text-decoration: none;
 }
 
 .navbar {

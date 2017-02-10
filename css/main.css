@@ -262,73 +262,52 @@ ol li:before{
 }
 
 .navbar-element {
-	width: 100%;
-	float: left;
 	float: right;
+	width:10%;
 }
 
 .navbar-logo {
-	width: 100%;
-	text-align: center;
+	float: left;
+	width: 25%;
 	color: #ac9085;
-	font-weight: 500;
-	font-size: 30px;
+	font-weight: 300;
+	font-size: 20px;
 	text-transform: uppercase;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.05em;
+	padding: 0.2em;
+	-webkit-transition: background-color 0.5s ease-out;
+		transition: background-color 0.5s ease-out;
+}
+
+.navbar-logo:hover, .navbar-logo:focus {
+	text-transform: none;
+	color: #5d5d5d;
+	font-weight: 300;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	padding: 0.2em;
+	text-decoration: none;
 }
 
 .navbar-link {
-	text-align: center;
+	display: block;
 	color: #333;
 	text-transform: uppercase;
-	font-size: 15px;
-	font-weight: 500;
+	font-size: 13px;
+	padding: 1em;
+	text-decoration: none;
+	letter-spacing: 0.01em;
 }
 
 .navbar-link:hover, .navbar-link:focus {
 	color: #be7f6b;
-	text-align: center;
+	text-decoration: none;
 }
 
 .is-active {
 	color: #be7f6b;
+	text-decoration: none;
 }
 
-@media (min-width: 70em) {
-	.navbar-element {
-		float: right;
-		width:10%;
-	}
-
-	.navbar-logo {
-		float: left;
-		width: 25%;
-		color: #ac9085;
-		font-weight: 300;
-		font-size: 20px;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		padding: 0.2em;
-	}
-
-	.navbar-link {
-		display: block;
-		color: #333;
-		text-transform: uppercase;
-		font-size: 13px;
-		padding: 1em;
-		text-decoration: none;
-		letter-spacing: 0.01em;
-	}
-
-	.navbar-link:hover, .navbar-link:focus {
-		color: #be7f6b;
-		text-decoration: none;
-	}
-
-	.is-active {
-		color: #be7f6b;
-		text-decoration: none;
-	}
-}
 

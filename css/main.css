@@ -291,11 +291,13 @@ input[type=text]:focus {
 /* SUBMIT & RESET BUTTON */
 .button-submit {
 	display: inline-block;
-	padding: 0.7rem 2rem;
+	padding: 0.7rem 0;
+	width: 100%;
 	color: #FFF;
 	font-weight: 500;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	text-align: center;
 	border-radius: 0.5rem;
 	background-color: #efb99f;
 	border: none;
@@ -312,11 +314,13 @@ input[type=text]:focus {
 
 .button-reset {
 	display: inline-block;
-	padding: 0.7rem 2rem;
+	padding: 0.7rem 0;
+	width: 100%;
 	color: #efb99f;
 	font-weight: 500;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	text-align: center;
 	border: 1px solid;
 	border-radius: 0.5rem;
 	background-color: transparent;
@@ -354,6 +358,7 @@ input[type=text]:focus {
 	letter-spacing: 0.2em;
 	font-style: italic;
 	margin-bottom: 0;
+	margin-top: 0;
 }
 
 /*styling for content/parahraphs */

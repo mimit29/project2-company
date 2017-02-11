@@ -197,30 +197,48 @@
 		          <h3>Sample Code:</h3>
 		            <div class="code-block">
 		              <code>
-		                &lt;ul class="navbar"&gt;
+		                &lt;nav class="nav"&gt;
 		                <br>
-		                  &nbsp;&nbsp;&lt;li class="navbar-logo"&gt;Trade&lt;/li&gt;
+		                  &nbsp;&nbsp;&lt;div class="nav-element"&gt;
 		                  <br>
-		                  &nbsp;&nbsp;&lt;li class="navbar-element"&gt;&lt;a class="navbar-link" href="#"&gt;Trade&lt;/a&gt;&lt;/li&gt;
+		                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="index.html" class="logo"&gt;
 		                  <br>
-		                  &nbsp;&nbsp;&lt;li class="navbar-element"&gt;&lt;a class="navbar-link" href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt;
+		                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bubble tea house
 		                  <br>
-		                  &nbsp;&nbsp;&lt;li class="navbar-element"&gt;&lt;a class="navbar-link" href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+		                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;
 		                  <br>
-		                  &nbsp;&nbsp;&lt;li class="navbar-element"&gt;&lt;a class="navbar-link is-active" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-		                <br>
-		                &lt;/ul&gt;
+		                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="navbar"&gt;      
+		                  <br>
+		                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="aboutus.html"&gt;About Us&lt;/a&gt;
+		                  <br>
+		                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="bubbletea.html"&gt;Bubble Tea&lt;/a&gt;
+		                  <br>
+		                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="contact.html"&gt;Contact Us&lt;/a&gt;	
+		                  <br>
+		                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="blog.html"&gt;Blog/Events&lt;/a&gt;	
+		                  <br>
+		                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+		                  <br>
+		                  &nbsp;&nbsp;&lt;/div&gt;
+		                  <br>
+		                  &lt;/nav&gt;		             
 		              </code>
 		            </div>
 
 		          <h3>Rendered Element:</h3> <!--Taken from: http://www.w3schools.com/css/css_navbar.asp-->
-		            <ul class="navbar">
-		              <li class="navbar-logo">Bubble Tea House</li>
-		              <li class="navbar-element"><a class="navbar-link" href="#">Blog</a></li>
-		              <li class="navbar-element"><a class="navbar-link" href="#">Contact Us</a></li>
-		              <li class="navbar-element"><a class="navbar-link" href="#">Bubble Tea</a></li>
-		              <li class="navbar-element"><a class="navbar-link" href="#">About Us</a></li>
-		            </ul>
+			        <nav class="nav">
+			        	<div class="nav-element">
+			        		<a href="index.html" class="logo">
+			        			bubble tea house
+			        		</a>
+			        		<div class="navbar">
+			        			<a class="nav-link" href="aboutus.html">About Us</a>
+			        			<a class="nav-link" href="bubbletea.html">Bubble Tea</a>
+			        			<a class="nav-link" href="contact.html">Contact Us</a>
+			        			<a class="nav-link" href="blog.html">Blog/Events</a>
+			        		</div>
+			        	</div>
+			        </nav>
 
 		      </section>
 

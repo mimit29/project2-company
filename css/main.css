@@ -3,7 +3,7 @@ body {
 	margin: 0;
 }
 
-* {
+*,*:after, *:before {
   box-sizing: border-box;
 }
 
@@ -130,6 +130,10 @@ section p {
 	width: 100%;
 }
 
+.grid-col-2of3 {
+	width: 100%;
+}
+
 .grid-col-1of4 {
 	width: 100%;
 }
@@ -142,6 +146,22 @@ section p {
 	width: 100%;
 }
 
+.grid-heading {
+	color: #be7f6b;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 0.5rem;
+	margin: 0;
+}
+
+.grid-description {
+	color: #5d5d5d;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding-top: 0.2rem;
+}
+
 @media (min-width: 30em) {
 	.grid-col-1of2 {
 		width: 50%;
@@ -149,6 +169,10 @@ section p {
 
 	.grid-col-1of3 {
 		width: 33.3%;
+	}
+
+	.grid-col-2of3 {
+		width: 66.6%;
 	}
 
 	.grid-col-1of4 {
@@ -188,7 +212,41 @@ section p {
 .button-default:hover, .button-default:focus {
 	background-color: #be7f6b;
 	color: #FFF;
+	text-decoration: none;
 }
+
+/* BUTTON BUBBLETEA */
+.button-bubbletea {
+	display: inline-block;
+	width: 100%;
+	padding: 0.7rem 0;
+	color: #FFF;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #efb99f;
+	border: none;
+	border-radius: 0.5rem;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+}
+
+.button-bubbletea:hover, .button-bubbletea:focus {
+	background-color: #be7f6b;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.bubbletea {
+	width: 100%;
+}
+
+.drink-pad {
+	margin-left: 3rem;
+}
+
 
 /* DEFAULT IN-TEXT LINK */
 a {
@@ -226,14 +284,20 @@ input[type=text]:focus {
 	border: 2px solid #efb99f;
 }
 
+.form-pad {
+	padding-right: 2rem;
+}
+
 /* SUBMIT & RESET BUTTON */
 .button-submit {
 	display: inline-block;
-	padding: 0.7rem 2rem;
+	padding: 0.7rem 0;
+	width: 100%;
 	color: #FFF;
 	font-weight: 500;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	text-align: center;
 	border-radius: 0.5rem;
 	background-color: #efb99f;
 	border: none;
@@ -250,11 +314,13 @@ input[type=text]:focus {
 
 .button-reset {
 	display: inline-block;
-	padding: 0.7rem 2rem;
+	padding: 0.7rem 0;
+	width: 100%;
 	color: #efb99f;
 	font-weight: 500;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	text-align: center;
 	border: 1px solid;
 	border-radius: 0.5rem;
 	background-color: transparent;
@@ -282,6 +348,17 @@ input[type=text]:focus {
 	color: #BE7F6B;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
+	margin-top: 0;
+}
+
+.sub-heading {
+	font-weight: 300;
+	font-size: 18px;
+	color: #5d5d5d;
+	letter-spacing: 0.2em;
+	font-style: italic;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 /*styling for content/parahraphs */
@@ -346,15 +423,25 @@ ol li:before{
 	display: inline-block;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	box-shadow: 0 0 10px 1px #e2e2e2; /* taken from: https://css-tricks.com/snippets/css/css-box-shadow/ */
 }
 
 .logo {
 	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+.logo-link {
 	color: #c29f96;
 	font-size: 14px;
 	text-transform: uppercase;
-	display: inline-block;
-	text-align: center;
+	text-decoration: none;
+}
+
+.logo-link:hover, .logo-link:focus {
+	color: #5d5d5d;
+	text-decoration: none;
 }
 
 .navbar {

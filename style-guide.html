@@ -81,11 +81,15 @@
 		    <section>
 		    	<h2>Submit/Reset Buttons</h2>
 		    		<h3>CSS Selector:</h3>
-		    			<p>.button-submit, .button-reset</p>
+		    			<p>.button-submit, .button-reset, .button-bubbletea, .button-default</p>
 
 	    			<h3>Sample Code:</h3>
 	    				<div class="code-block">
 	    					<code>
+	    						&lt;a href="#" class="button-default"&gt;Default&lt;/a&gt;
+	    						<br>
+	    						&lt;a href="#" class="button-bubbletea"&gt;Bubble Tea Buttons&lt;/a&gt;
+	    						<br>
 	    						&lt;a href="#" class="button-submit"&gt;Submit&lt;/a&gt;
 	    						<br>
 	    						&lt;a href="#" class="button-reset"&gt;Reset&lt;/a&gt;
@@ -93,8 +97,23 @@
 	    				</div>
 
     				<h3>Rendered Element:</h3>
-    					<a class="button-submit" href="#">Submit</a>
-    					<a class="button-reset" href="#">Reset</a>
+    					<div class="grid-row">
+    						<div class="grid-col-1of3">
+    						<a class="button-default" href="#">Default</a>
+    						</div>
+    					</div> 
+    					<div class="grid-row">
+	    					<div class="grid-col-1of3">
+	    						<a class="button-bubbletea" href="#">Bubble Tea Buttons</a> 
+	    					</div>
+	    					<div class="grid-col-1of3">
+	    						<a class="button-submit" href="#">Submit</a> 
+	    					</div>
+	    					<div class="grid-col-1of3">
+	    						<a class="button-reset" href="#">Reset</a> 
+	    					</div> 
+    					</div>
+
 
 			</section>	
 
@@ -110,12 +129,13 @@
 			<section>
 				<h2>Headings</h2>
 					<h3>CSS selectors:</h3>
-						<p>.header-text, .heading</p>
+						<p>.header-text, .heading, .sub-heading</p>
 					<h3>Sample Code:</h3>
 						<div class="code-block">
 							<code>
 								&lt;h1 class="head-text"&gt;Headings&lt;/h1&gt; <br>
-								&lt;h2 class="heading"&gt;Headings&lt;/h2&gt;
+								&lt;h2 class="heading"&gt;Headings&lt;/h2&gt; <br>
+								&lt;h3 class="sub-heading"&gt;Headings&lt;/h3&gt;
 							</code>
 						</div>
 

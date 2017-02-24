@@ -473,6 +473,7 @@ textarea:focus {
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .sub-heading {
@@ -492,6 +493,19 @@ textarea:focus {
 	font-style: italic;
 	color: #BE7F6B;
 	padding-top: 1em;
+}
+
+.price-heading {
+	font-weight: 300;
+	font-size: 15px;
+	color: #5d5d5d;
+	letter-spacing: 0.2em;
+	margin-top: 0;
+}
+
+.price-heading span {
+	font-style: none;
+	font-weight: 800;
 }
 
 /*styling for content/parahraphs */

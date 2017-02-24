@@ -56,6 +56,16 @@ section p {
 }
 
 /* Headings Style */
+
+.header-bubbletea {
+	width: 100%;
+	height: 400px;
+	/*background-image styling taken from: https://www.w3schools.com/css/css_background.asp*/
+	background-image: url("https://media.timeout.com/images/103339808/image.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .header-peri {
 	width: 100%;
 	height: 400px;
@@ -80,6 +90,7 @@ section p {
 
 /*change text size on mobile*/
 .header-text {
+	padding-top: 10rem;
 	font-size: 24px;
 	font-weight: 400;
 	color: #be7f6b;
@@ -106,7 +117,7 @@ section p {
 }
 
 .section-grey {
-	background-color: #ddd;
+	background-color: #E6E7E8;
 	padding: 5rem 0;
 }
 
@@ -145,14 +156,24 @@ section p {
 	text-transform: uppercase;
 	padding-top: 0.5rem;
 	margin: 0;
+	font-size: 14px;
 }
 
 .grid-description {
 	color: #5d5d5d;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 11px;
 	padding-top: 0.2rem;
+}
+
+.price-description {
+	font-weight: 800;
+	color: #5d5d5d;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 11px;
+	margin-top: -0.4rem;
 }
 
 /*-----------
@@ -321,6 +342,7 @@ section p {
 
 .bubbletea {
 	width: 100%;
+	height: auto;
 }
 
 .drink-pad {

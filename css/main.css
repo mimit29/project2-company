@@ -30,7 +30,21 @@ section p {
 	margin: auto;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 20em) {
+	.container {
+		width: 90%;
+	}
+}
+
+/*for mid-size screens*/
+@media (min-width: 40em) {
+	.container {
+		width: 70%;
+	}
+}
+
+/*for larger screens*/
+@media (min-width: 80em) {
 	.container {
 		width: 55%;
 		margin: auto; /* taken from http://www.w3schools.com/css/css_align.asp */
@@ -109,14 +123,8 @@ section p {
   float: left;
   padding-right: 0.3rem;
   padding-left: 0.3rem;
+  margin-bottom: 0.5rem;
   box-sizing: border-box;
-}
-
-[class^='grid-col-']:last-of-type {
-}
-
-.grid-row {
-	margin-bottom: 0.5rem;
 }
 
 /*-----------
@@ -145,33 +153,88 @@ section p {
 	padding-top: 0.2rem;
 }
 
+/*For mobile*/
+    [class*="grid-col-"] {
+        width: 100%;
+    }
+
+
+
 /*For mid-size screens*/
-
-
-/* For Desktop */
 @media (min-width: 30em) {
-	.grid-col12of12 {
+	.grid-col-12of12 {
 		width: 100%;
 	}
 
-	.grid-col11of12 {
-		width: 91.7%;
+	.grid-col-11of12 {
+		width: 100%;
 	}
 
-	.grid-col10of12 {
-		width: 83.3%;
+	.grid-col-10of12 {
+		width: 100%;
 	}
 
-	.grid-col9of12 {
-		width: 75%;
+	.grid-col-9of12 {
+		width: 100%;
 	}
 
-	.grid-col8of12 {
-		width: 66.7%;
+	.grid-col-8of12 {
+		width: 100%;
 	}
 
 	.grid-col-7of12 {
-		width: 58.3%;
+		width: 100%;
+	}
+
+	.grid-col-6of12 {
+		width: 100%;
+	}
+
+	.grid-col-5of12 {
+		width: 100%;
+	}
+
+	.grid-col-4of12 {
+		width: 33.33%;
+	}
+
+	.grid-col-3of12 {
+		width: 50%;
+	}
+
+	.grid-col-2of12 {
+		width: 25%;
+	}
+
+	.grid-col-1of12 {
+		width: 16.66%;
+	}	
+}
+
+/* For Desktop */
+@media (min-width: 50em) {
+	.grid-col-12of12 {
+		width: 100%;
+	}
+
+	.grid-col-11of12 {
+		width: 91.66%;
+	}
+
+	.grid-col-10of12 {
+		width: 83.33%;
+	}
+
+	.grid-col-9of12 {
+		width: 75%;
+	}
+
+	.grid-col-8of12 {
+		width: 66.66%;
+	}
+
+	.grid-col-7of12 {
+		width: 58.33%;
 	}
 
 	.grid-col-6of12 {
@@ -179,11 +242,11 @@ section p {
 	}
 
 	.grid-col-5of12 {
-		width: 41.7%;
+		width: 41.66%;
 	}
 
 	.grid-col-4of12 {
-		width: 33.3%;
+		width: 33.33%;
 	}
 
 	.grid-col-3of12 {
@@ -191,11 +254,11 @@ section p {
 	}
 
 	.grid-col-2of12 {
-		width: 16.7%;
+		width: 16.66%;
 	}
 
 	.grid-col-1of12 {
-		width: 8.3%;
+		width: 8.33%;
 	}
 }
 

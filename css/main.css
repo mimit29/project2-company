@@ -451,6 +451,7 @@ input[type=text]:focus {
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .sub-heading {
@@ -461,6 +462,19 @@ input[type=text]:focus {
 	font-style: italic;
 	margin-bottom: 0;
 	margin-top: 0;
+}
+
+.price-heading {
+	font-weight: 300;
+	font-size: 15px;
+	color: #5d5d5d;
+	letter-spacing: 0.2em;
+	margin-top: 0;
+}
+
+.price-heading span {
+	font-style: none;
+	font-weight: 800;
 }
 
 /*styling for content/parahraphs */

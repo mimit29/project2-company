@@ -31,31 +31,82 @@
         <div class="main"> <!-- Padding for navbar -->
 
 	        <!-- Title -->
-			<section id="header" class="header-peri">
+			<section id="header" class="header-contact">
 				<div class="container">
-					<h1 class="header-text">Contact us</h1>
+					<div class="grid-row">
+						<div class="grid-col-8of12">
+							<h1 class="header-text">Contact Us</h1>
+						</div>
+					</div>
 				</div>
 			</section>
 
-			<!--Section White-->
-			<section id="About Us" class="section-white">
+			<section id="address" class="section-white">
 				<div class="container">
-					<h2 class="heading">Send us a message!</h2>
-					<form>
-		          			<label for="name">Name</label>
-		          			<input type="text" id="name" name="name" placeholder="Jane Doe">
-		          	</form>	
+					<div class="grid-row">
+						<div class="grid-col-12of12">
+							<h2 class="heading">Location</h2>
+							<p class="sub-heading">Where to find us!</p>
 
-		          	<form>
-		          			<label for="email">Email</label>
-		          			<input type="text" id="email" name="email" placeholder="bbthouse@gmail.com">
-		          	</form>	
+							<p class="para">
+							11537 Gotbang Court <br>
+							Vancouver, BC <br>
+							Y5G 7J2
+							</p>
+						</div>
+					</div>
+				</div>
+				
+			</section>
 
-		          	<form>
-		          			<label for="name">Message</label>
-		          			<input type="text" id="message" name="message" placeholder="Enter Your Message Here">
-		          	</form>	
-		          	<a href=# class="button-default">Submit</a>
+			<!--Section White-->
+			<section id="send-message" class="section-grey">
+				<div class="container">
+					<div class="grid-row">
+						<div class="grid-col-12of12">
+							<h2 class="heading">Send us a message!</h2>
+							<p class="sub-heading">
+								How can we help you? We’re always looking for feedback!
+							</p>
+						
+						</div> 
+					</div>
+
+					<div class="grid-row">
+						<div class="grid-col-6of12">
+							<form>
+			          			<label for="name">Name</label>
+			          			<input type="text" id="name" name="name" placeholder="Jane Doe">
+		          			</form>	
+						</div>
+						<div class="grid-col-6of12">
+							<form>
+			          			<label for="email">Email</label>
+			          			<input type="text" id="email" name="email" placeholder="bbthouse@gmail.com">
+		          			</form>	
+						</div>
+					</div>
+					
+
+					<!-- for easier c/p purposes
+		          	<div class="grid-row">
+						<div class="grid-col-6of12">
+				
+						</div>
+					</div> -->
+		          	
+					<div class="grid-row">
+						<div class="grid-col-12of12">
+							<form>
+				          			<label for="name">Message</label>
+				          			<!-- <input type="text" id="message" name="message" placeholder="Enter Your Message Here" class="message-box"> -->
+				          			<!-- knowledge from http://www.computerhope.com/issues/ch000062.htm -->
+				          			<textarea placeholder="Enter Your Message Here" class="message-box"></textarea>
+					          </form>	
+					          <a href=# class="button-default">Submit</a>
+						</div>
+					</div>
+		          	
 				</div>
 			</section>
 

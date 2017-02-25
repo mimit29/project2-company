@@ -390,6 +390,7 @@ textarea{
 	font-family: Overpass;
 	font-weight: 200;
 	width: 100%;
+	resize: none; /*limit stretch: http://stackoverflow.com/questions/3899463/how-can-i-prevent-the-textarea-from-stretching-beyond-his-parent-div-element-g*/
 	padding: 1rem 1rem;
 	margin: 0.5rem 0;
 	box-sizing: border-box;
@@ -488,9 +489,7 @@ textarea:focus {
 }
 
 .intext-heading {
-	font-weight: 300;
-	font-size: 16px;
-	font-style: italic;
+	font-weight: 500;
 	color: #BE7F6B;
 	padding-top: 1em;
 }
@@ -682,6 +681,8 @@ ol li:before{
 
 }
 
+/*img/header styings*/
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -701,17 +702,20 @@ img {
 .header-blog {
 	width: 100%;
 	height: 400px;
-	/*background-image styling taken from: http://citydergisi.com/wp-content/uploads/2015/11/bubble-tea-2-1024x768.jpg*/
-	background-image: url("http://citydergisi.com/wp-content/uploads/2015/11/bubble-tea-2-1024x768.jpg");
+	/*background-image styling taken from: https://media.timeout.com/images/103339809/image.jpg*/
+	background-image: url("https://media.timeout.com/images/103339809/image.jpg");
 	background-repeat: no-repeat;
+	/* https://www.w3schools.com/cssref/pr_background-position.asp */
+	background-position: 50% 70%;
 	background-size: 100%;
 }
 
 .header-contact {
 	width: 100%;
 	height: 400px;
-	/*background-image styling taken from: http://citydergisi.com/wp-content/uploads/2015/11/bubble-tea-2-1024x768.jpg*/
-	background-image: url("https://thechiaco.com/au/wp-content/uploads/2016/09/recipe-chia-coconut-milk-tea.jpg");
+	/*background-image styling taken from: https://i1.wp.com/www.letsregale.com/wp-content/uploads/2016/04/Where-To-Drink-The-Best-Bubble-Tea-in-Portland_11.jpg?resize=1200%2C850*/
+	background-image: url("https://i1.wp.com/www.letsregale.com/wp-content/uploads/2016/04/Where-To-Drink-The-Best-Bubble-Tea-in-Portland_11.jpg?resize=1200%2C850");
 	background-repeat: no-repeat;
+	background-position: 50% 35%;
 	background-size: 100%;
 }

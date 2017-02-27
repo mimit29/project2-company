@@ -343,6 +343,12 @@ section p {
 .bubbletea {
 	width: 100%;
 	height: auto;
+	padding: 0;
+}
+
+a .bubbletea:hover,a .bubbletea:focus {
+	border-bottom: 3px solid #efb99f;
+	margin-bottom: -3px;
 }
 
 .drink-pad {
@@ -447,6 +453,7 @@ textarea:focus {
 	text-transform: uppercase;
 	text-align: center;
 	border: 1px solid;
+	margin: -1px;
 	border-radius: 0.5rem;
 	background-color: transparent;
 	border-color: #efb99f;
@@ -460,7 +467,6 @@ textarea:focus {
 	color: #fff;
 	text-decoration: none;
 }
-
 
 /* ----------------
 	 TEXT ELEMENTS

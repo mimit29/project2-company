@@ -50,12 +50,13 @@
 								</p>
 								<!--Select taken from: https://www.w3schools.com/tags/tag_option.asp-->
 								<select>
-									<option value="none">No Topping</option>
-									<option value="pearl">Pearl</option>
-									<option value="pudding">Pudding</option>
-									<option value="redbean">Red Bean</option>
-									<option value="coconutjelly">Coconut Jelly</option>
-									<option value="grassjelly">Grass Jelly</option>
+									<option value="" disabled selected>Choose a topping</option>
+									<option value="1">No Topping</option>
+									<option value="2">Pearl</option>
+									<option value="3">Pudding</option>
+									<option value="4">Red Bean</option>
+									<option value="5">Coconut Jelly</option>
+									<option value="6">Grass Jelly</option>
 								</select>
 								<br>
 								<br>
@@ -67,6 +68,16 @@
 			</section>
 
 		</div> <!-- END OF MAIN CLASS -->
+
+		<script src="js/classie.js"></script>
+		<script src="js/selectFx.js"></script>
+		<script>
+			(function() {
+				[].slice.call( document.querySelectorAll( 'select.topping-select' ) ).forEach( function(el) {	
+					new SelectFx(el);
+				} );
+			})();
+		</script>
 
 	</body>
 

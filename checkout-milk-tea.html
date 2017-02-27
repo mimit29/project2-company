@@ -4,7 +4,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Mango Smoothie</title>
+		<title>Check Out - Milk Tea</title>
 
 		<link href="css/main.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,42 +31,54 @@
 
         <div class="main"> <!-- Padding for navbar -->
 
-			<!--Milk Tea Info-->
-			<section id="Milk Tea" class="section-white">
+			<!--Section White-->
+			<section id="Checkout" class="section-white">
 				<div class="container">
 					<div class="grid-row">
-						<!--Drink Image-->
+						<div class="grid-col-12of12">
+							<h2 class="heading">Checkout</h2>
+						</div>
+					</div>
+
+
+					<div class="grid-row">
+						<!--Drinks-->
 						<div class="grid-col-4of12">
 							<div class="grid-col-10of12">
-								<img class="bubbletea" src="img/bubbletea/smoothie/mango_smoothie.gif">
+								<img class="bubbletea" src="img/bubbletea/milk_tea/milk_tea.gif">
+								<p class="grid-heading">Milk Tea</p>
 							</div>
 						</div>
-						<!--Drink Info-->
+						<!--Order Summary-->
 						<div class="grid-col-8of12">
-							<h3 class="sub-heading">Smoothie</h3>
-							<h2 class="heading">Mango Smoothie</h2>
-							<h4 class="price-heading"><span>$3.59</span> cold</h4>
-							<p class="para">
-								We handpick only the freshest and best mangoes from the Philippines for our signature mango smoothie. Sweetened with natural ingredients, we blend them all together with ice to make the perfect pick-me-up after a fun day in the sun.  
-							</p>
-
-							<!--Select taken from: https://www.w3schools.com/tags/tag_option.asp-->
-							<select>
-								<option value="" disabled selected>Choose a topping</option>
-								<option value="1">No Topping</option>
-								<option value="2">Pearl</option>
-								<option value="3">Pudding</option>
-								<option value="4">Red Bean</option>
-								<option value="5">Coconut Jelly</option>
-								<option value="6">Grass Jelly</option>
-							</select>
-							<br>
-							<br>
-							<a class="button-default" href="checkout-mango-smoothie.html">Add to Cart</a>
+						<!--Order Summary-->
+							<h3 class="sub-heading">Order Summary</h3>
+							<!-- Table taken from: https://www.w3schools.com/html/html_tables.asp -->
+							<table class="table-summary">
+								<tr>
+									<th>Drink(s)</th>
+									<td>1</td>
+								</tr>
+								<tr>
+									<th>Topping(s)</th>
+									<td>Pearl  <span>$0.50</span></td>
+								</tr>
+								<tr>
+									<th>Discount(s)</th>
+									<td>CAD $0.00</td>
+								</tr>								
+								<tr>
+									<th class="summary-total">Drink(s) Total</th>
+									<td class="summary-total">CAD $4.09</td>
+								</tr>
+							</table>
+							<a class="button-default" href="sign-in.html"> next </a>
 						</div>
 					</div>
 				</div>
 			</section>
+
+
 
 		</div> <!-- END OF MAIN CLASS -->
 

@@ -352,7 +352,7 @@ a .bubbletea:hover,a .bubbletea:focus {
 }
 
 .drink-pad {
-	margin-left: 3rem;
+	margin-left: 2rem;
 }
 
 
@@ -466,6 +466,29 @@ textarea:focus {
 	background-color: #efb99f;
 	color: #fff;
 	text-decoration: none;
+}
+
+/* TABLE STYLING */
+.table-summary {
+	width: 100%;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 3rem;
+}
+
+.table-summary th {
+	text-align: left;
+	font-weight: 400;
+	color: #be7f6b;
+}
+
+.table-summary td {
+	text-align: right;
+	font-weight: 400;
+}
+
+.summary-total {
+	border-top: 3px solid #ccc;
 }
 
 /* ----------------

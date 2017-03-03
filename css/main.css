@@ -642,6 +642,11 @@ ol li:before{
 	margin-right: 2em;
 }
 
+.is-active {
+	color: #Be7f6b;
+	text-decoration: none;
+}
+
 @media (min-width: 60em) {
 
 

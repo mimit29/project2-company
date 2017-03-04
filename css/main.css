@@ -121,6 +121,19 @@ section p {
 	padding: 5rem 0;
 }
 
+.section-box {
+	position: relative;
+	background-color: #fff;
+	height: 130px;
+}
+
+.box-content { /*centering content within box taken from: http://stackoverflow.com/questions/6490252/vertically-centering-a-div-inside-another-div*/
+ 	position: absolute;
+ 	width: 100%;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+}
+
 /* Page Footer Style */
 .footer {
 	background-color: #1f1f1f;

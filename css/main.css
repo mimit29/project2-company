@@ -189,6 +189,10 @@ section p {
 	font-size: 11px;
 }
 
+.price-description span {
+	font-weight: 400;
+}
+
 /*-----------
   12 COL GRID
   -----------*/

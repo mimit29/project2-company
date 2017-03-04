@@ -363,6 +363,13 @@ section p {
 	padding: 0;
 }
 
+.reward {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: auto;	
+}
+
 a .bubbletea:hover,a .bubbletea:focus {
 	border-bottom: 3px solid #efb99f;
 	margin-bottom: -3px;
@@ -534,6 +541,21 @@ textarea:focus {
 	padding-bottom: 1em;
 }
 
+.sub-heading span {
+	font-weight: 800;
+}
+
+.reward-heading {
+	font-weight: 300;
+	font-size: 16px;
+	color: #5d5d5d;
+	letter-spacing: 0.2em;
+	font-style: italic;
+	margin-bottom: 0;
+	padding-bottom: 1em;
+	text-align: center;	
+}
+
 .intext-heading {
 	font-weight: 500;
 	color: #BE7F6B;
@@ -551,6 +573,11 @@ textarea:focus {
 .price-heading span {
 	font-style: none;
 	font-weight: 800;
+}
+
+.current-border {
+	border: 3px solid;
+	color: #BE7F6B;
 }
 
 /*styling for content/parahraphs */

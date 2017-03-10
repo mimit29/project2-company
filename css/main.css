@@ -23,8 +23,15 @@ section p {
 }
 
 .main {
-	margin-top: 5rem;
+	margin-top: 7rem;
 }
+
+@media (min-width: 65em) {
+	.main {
+		margin-top: 5rem;
+	}
+}
+
 
 .container {
 	width: 90%;
@@ -36,6 +43,7 @@ section p {
 	.container {
 		width: 70%;
 	}
+
 }
 
 /*for larger screens*/
@@ -66,26 +74,34 @@ section p {
 	background-size: 100%;
 }
 
-.header-peri {
+.header-home {
 	width: 100%;
-	height: 400px;
-	background-color: #deece2;
-	padding: 7rem 0;
+	height: 100%;
+	/* background img scr: http://citydergisi.com/wp-content/uploads/2015/11/bubble-tea-2-1024x768.jpg */
+	background-image: url('../img/homepage/header-withlogo.jpg');
+	background-repeat: no-repeat;
+	/*background-position: 50% 100%; */
+	background-size: 100%
 }
 
-.header-white {
-	background-color: #Fff;
-	padding: 7rem 0;
+.header-img {
+	width: 100%;
+	height: 150px;
+	background-image: url('../img/homepage/header-test.jpg');
+	background-repeat: no-repeat;
+	/*background-position: 50% 35%;*/
+	background-size: 100%;
 }
 
-.header-pink {
-	background-color: #Efb99f;
-	padding: 7rem 0;
-}
-
-.header-blue {
-	background-color: #Cbd4ca;
-	padding: 7rem 0;
+@media (min-width: 33rem) {
+	.header-img {
+		width: 100%;
+		height: 250px;
+		background-image: url('../img/homepage/header-test.jpg');
+		background-repeat: no-repeat;
+		/*background-position: 50% 35%;*/
+		background-size: 100%;
+	}
 }
 
 /*change text size on mobile*/
@@ -110,6 +126,7 @@ section p {
 }
 
 /* Sections Style */
+
 
 .section-white {
 	background-color: #fff;
@@ -721,7 +738,7 @@ ol li:before{
 	text-decoration: none;
 }
 
-@media (min-width: 60em) {
+@media (min-width: 65em) {
 
 
 	.nav {
@@ -835,21 +852,3 @@ img {
 	background-size: 100% 
 }*/
 
-.header-home {
-	width: 100%;
-	height: 100%;
-	/* background img scr: http://citydergisi.com/wp-content/uploads/2015/11/bubble-tea-2-1024x768.jpg */
-	background-image: url('../img/homepage/header-withlogo.jpg');
-	background-repeat: no-repeat;
-	/*background-position: 50% 100%; */
-	background-size: 100%
-}
-
-.header-img {
-	width: 100%;
-	height: 300px;
-	background-image: url('../img/homepage/header-test.jpg');
-	background-repeat: no-repeat;
-	/*background-position: 50% 35%;*/
-	background-size: 100%;
-}

@@ -1,5 +1,6 @@
 /*Standard CSS*/
-body {
+html, body {
+	height: 100%;
 	font-family: 'Overpass', sans-serif;
 	margin: 0;
 }
@@ -26,13 +27,18 @@ section p {
 /*main css provides margin (breathing room) for the navbar*/
 .main {
 	margin-top: 7rem;
+	min-height: 100%;
 }
 
 @media (min-width: 65em) {
 	.main {
 		margin-top: 5rem;
+		min-height: 80%;
+		margin-bottom: 50px;
+
 	}
 }
+
 
 /*container provides padding and center alignment for our content*/
 .container {
@@ -212,18 +218,13 @@ a .section-box:hover,a .section-box:focus {
 	transform: translate(-50%,-50%);
 }
 
-/* Page Footer Style */
+/* Page Footer Style code (for when content is short from https://css-tricks.com/couple-takes-sticky-footer) */
 .footer {
-	/*position: fixed;
-    bottom: 0;
-    width: 100%;*/
-    /*display: flex;
-    min-height: 10vh;
-    flex-direction: column;
-    flex: 1 0 auto; */
 	background-color: #1f1f1f;
-	padding: 2rem 0;
+	padding: 2rem;
 }
+
+
 
 .footer-text {
 	color: #636363;

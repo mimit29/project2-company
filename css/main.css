@@ -159,7 +159,7 @@ section p {
 
 .footer-text {
 	color: #636363;
-	margin: 0;
+	margin-right: 2rem;
 }
 
 /* --------
@@ -866,3 +866,25 @@ img {
 	background-size: 100% 
 }*/
 
+/*CITATIONS STYLING*/
+.citations-body {
+	padding:2rem;
+	line-height: 25px;
+}
+
+.citations-text {
+	font-weight: 300;
+	text-indent: 40px;
+}
+
+.citations-link {
+	text-decoration: none;
+  	color: black;
+}
+
+.citations-link:hover, .citations-link:focus
+{
+  text-decoration: none;
+  color: #be7f6b;
+  /*color: #939597;*/
+}

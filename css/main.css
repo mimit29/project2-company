@@ -192,6 +192,11 @@ section p {
 	height: 130px;
 }
 
+a .section-box:hover,a .section-box:focus {
+	border-bottom: 3px solid #efb99f;
+	margin-bottom: -3px;
+}
+
 .box-content { /*centering content within box taken from: http://stackoverflow.com/questions/6490252/vertically-centering-a-div-inside-another-div*/
  	position: absolute;
  	width: 100%;

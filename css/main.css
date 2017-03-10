@@ -192,6 +192,11 @@ section p {
 	height: 130px;
 }
 
+a .section-box:hover,a .section-box:focus {
+	border-bottom: 3px solid #efb99f;
+	margin-bottom: -3px;
+}
+
 .box-content { /*centering content within box taken from: http://stackoverflow.com/questions/6490252/vertically-centering-a-div-inside-another-div*/
  	position: absolute;
  	width: 100%;
@@ -201,6 +206,13 @@ section p {
 
 /* Page Footer Style */
 .footer {
+	/*position: fixed;
+    bottom: 0;
+    width: 100%;*/
+    /*display: flex;
+    min-height: 10vh;
+    flex-direction: column;
+    flex: 1 0 auto; */
 	background-color: #1f1f1f;
 	padding: 2rem 0;
 }
@@ -209,6 +221,16 @@ section p {
 	color: #636363;
 	margin-right: 2rem;
 }
+
+.site { 
+	display: flex;
+	min-height: 10vh;
+	flex-direction: column;
+ }
+
+ .site-content {
+ 	flex: 1;
+ }
 
 /* --------
 	 GRIDS 
@@ -859,6 +881,7 @@ ol li:before{
 	width: 100%;
 	background-color: #fff;
 	position: fixed;
+	z-index: 100;
 	top: 0;
 	height: 7rem;
 	display: inline-block;

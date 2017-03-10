@@ -33,7 +33,7 @@ section p {
 @media (min-width: 65em) {
 	.main {
 		margin-top: 5rem;
-		min-height: 80%;
+		min-height: 100%;
 		margin-bottom: 50px;
 
 	}
@@ -223,8 +223,6 @@ a .section-box:hover,a .section-box:focus {
 	background-color: #1f1f1f;
 	padding: 2rem;
 }
-
-
 
 .footer-text {
 	color: #636363;

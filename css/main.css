@@ -99,7 +99,7 @@ section p {
 }
 
 /*change text size on desktop*/
-@media (min-width: 30rem) {
+@media (min-width: 33rem) {
 	.header-text {
 		font-size: 45px;
 		font-weight: 400;
@@ -117,7 +117,7 @@ section p {
 }
 
 .section-grey {
-	background-color: #E6E7E8;
+	background-color: #f2f2f2;
 	padding: 5rem 0;
 }
 
@@ -373,6 +373,10 @@ section p {
 a .bubbletea:hover,a .bubbletea:focus {
 	border-bottom: 3px solid #efb99f;
 	margin-bottom: -3px;
+}
+
+.grid-link:hover, .grid-link:focus {
+	text-decoration: none;
 }
 
 .drink-pad {

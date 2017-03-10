@@ -222,7 +222,7 @@ section p {
 
 
 /*For mid-size screens*/
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 35em) {
 	.grid-col-12of12 {
 		width: 100%;
 	}
@@ -260,11 +260,11 @@ section p {
 	}
 
 	.grid-col-3of12 {
-		width: 50%;
+		width: 33.33%;
 	}
 
 	.grid-col-2of12 {
-		width: 25%;
+		width: 33.33%;
 	}
 
 	.grid-col-1of12 {
@@ -372,6 +372,20 @@ section p {
 	background-color: #be7f6b;
 	color: #FFF;
 	text-decoration: none;
+}
+
+.button-categories {
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	box-shadow: 0 0 2px 0 #F5CAC9; /* taken from: https://css-tricks.com/snippets/css/css-box-shadow/ */
+}
+
+#category-nav.hidden, #category-nav.hidden {
+	visibility: hidden;
+	display: none;
 }
 
 .bubbletea {

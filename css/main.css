@@ -1,3 +1,4 @@
+/*Standard CSS*/
 body {
 	font-family: 'Overpass', sans-serif;
 	margin: 0;
@@ -22,6 +23,7 @@ section p {
   margin-top: 0;
 }
 
+/*main css provides margin (breathing room) for the navbar*/
 .main {
 	margin-top: 7rem;
 }
@@ -32,7 +34,7 @@ section p {
 	}
 }
 
-
+/*container provides padding and center alignment for our content*/
 .container {
 	width: 90%;
 	margin: auto;
@@ -43,7 +45,6 @@ section p {
 	.container {
 		width: 70%;
 	}
-
 }
 
 /*for larger screens*/
@@ -54,6 +55,7 @@ section p {
 	}
 }
 
+/*code styled for our style guide*/
 .code-block { /*border style taken from: http://www.w3schools.com/css/css_border.asp*/
   width: 100%;
   display: block;
@@ -64,7 +66,6 @@ section p {
 }
 
 /* Headings Style */
-
 .header-bubbletea {
 	width: 100%;
 	height: 400px;
@@ -73,29 +74,27 @@ section p {
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
-
+/* HOME HEADING IMAGE HEIGHT W/ MEDIA QUERIES */
 .header-home {
 	width: 100%;
 	height: 200px;
-	/* background img scr: http://citydergisi.com/wp-content/uploads/2015/11/bubble-tea-2-1024x768.jpg */
 	background-image: url('../img/homepage/header-withlogo.jpg');
 	background-repeat: no-repeat;
-	/*background-position: 50% 100%; */
 	background-size: 100%
 }
 
+/* on a slightly bigger screen */
 @media (min-width: 33em) {
 	.header-home {
 		width: 100%;
 		height: 300px;
-		/* background img scr: http://citydergisi.com/wp-content/uploads/2015/11/bubble-tea-2-1024x768.jpg */
 		background-image: url('../img/homepage/header-withlogo.jpg');
 		background-repeat: no-repeat;
-		/*background-position: 50% 100%; */
 		background-size: 100%
 	}
 }
 
+/* on an even bigger screen (around tablet size) */
 @media (min-width: 48em) {
 	.header-home {
 		width: 100%;
@@ -108,6 +107,7 @@ section p {
 	}
 }
 
+/* for small laptop sizes */
 @media (min-width: 57em) {
 	.header-home {
 		width: 100%;
@@ -120,6 +120,7 @@ section p {
 	}
 }
 
+/* for desktops and larger */
 @media (min-width: 65em) {
 	.header-home {
 		width: 100%;
@@ -132,6 +133,7 @@ section p {
 	}
 }
 
+/* HEADER IMAGE FOR ALL OTHER PAGES */
 .header-img {
 	width: 100%;
 	height: 150px;
@@ -141,16 +143,18 @@ section p {
 	background-size: 100%;
 }
 
+/* change width when not on mobile */
 @media (min-width: 33rem) {
 	.header-img {
 		width: 100%;
 		height: 250px;
 		background-image: url('../img/homepage/header.jpg');
 		background-repeat: no-repeat;
-		/*background-position: 50% 35%;*/
 		background-size: 100%;
 	}
 }
+
+/* HEADER TEXT */
 
 /*change text size on mobile*/
 .header-text {
@@ -173,30 +177,34 @@ section p {
 	}
 }
 
-/* Sections Style */
+/* SECTIONS */
 
-
+/* white background sections */
 .section-white {
 	background-color: #fff;
 	padding: 5rem 0;
 }
 
+/* grey background sections */
 .section-grey {
 	background-color: #f2f2f2;
 	padding: 5rem 0;
 }
 
+/* boxed section for profile */
 .section-box {
 	position: relative;
 	background-color: #fff;
 	height: 130px;
 }
 
+/* when profile boxes are hovered, show a border at the bottom */
 a .section-box:hover,a .section-box:focus {
 	border-bottom: 3px solid #efb99f;
 	margin-bottom: -3px;
 }
 
+/* content found inside boxed section */
 .box-content { /*centering content within box taken from: http://stackoverflow.com/questions/6490252/vertically-centering-a-div-inside-another-div*/
  	position: absolute;
  	width: 100%;
@@ -427,6 +435,7 @@ a .section-box:hover,a .section-box:focus {
 	text-decoration: none;
 }
 
+/* SECONDARY NAV BUTTONS FOR BUBBLETEA */
 .button-categories {
 	position: fixed;
 	width: 100%;
@@ -436,17 +445,26 @@ a .section-box:hover,a .section-box:focus {
 	box-shadow: 0 0 2px 0 #F5CAC9; /* taken from: https://css-tricks.com/snippets/css/css-box-shadow/ */
 }
 
+/* SECONDARY NAV FOR BUBBLETEA CATEGORIES */
 #category-nav.hidden, #category-nav.hidden {
 	visibility: hidden;
 	display: none;
 }
 
+/* BUBBLETEA IMAGE SIZING */
 .bubbletea {
 	width: 100%;
 	height: auto;
 	padding: 0;
 }
 
+/* when bubbletea images are hovered, show a line at the bottom */
+a .bubbletea:hover,a .bubbletea:focus {
+	border-bottom: 3px solid #efb99f;
+	margin-bottom: -3px;
+}
+
+/* REWARD IMAGE SIZING */
 .reward {
 	width: 100%;
 	height: auto;
@@ -454,19 +472,10 @@ a .section-box:hover,a .section-box:focus {
 	margin: auto;	
 }
 
-a .bubbletea:hover,a .bubbletea:focus {
-	border-bottom: 3px solid #efb99f;
-	margin-bottom: -3px;
-}
-
+/* When grid-links (bubbletea descriptions) are hovered, don't show the same decoration with a border bottom */
 .grid-link:hover, .grid-link:focus {
 	text-decoration: none;
 }
-
-.drink-pad {
-	margin-left: 2rem;
-}
-
 
 /* DEFAULT IN-TEXT LINK */
 a {
@@ -481,7 +490,7 @@ a:hover, a:focus {
 	text-decoration: underline;
 }
 
-/* DEFAULT LABEL */
+/* LABELS AND INPUTS */
 
 label {
 	font-weight: 500;
@@ -532,6 +541,7 @@ textarea:focus {
 }
 
 /* CHECKBOXES */
+/* css code taken from http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/ */
 
 .regular-checkbox {
 	-webkit-appearance: none;
@@ -620,6 +630,7 @@ textarea:focus {
 	text-decoration: none;
 }
 
+/* BUTTON FOR THE HOME PAGE */
 .button-anchor {
 	display: none;
 }
@@ -1016,22 +1027,6 @@ img {
 	background-position: 50% 70%;
 	background-size: 100%;
 }
-
-/*.header-contact {
-	width: 100%;
-	height: 300px;
-	background-image: url('../img/homepage/header.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;
-}*/
-
-/*.header-about {
-	width: 100%;
-	height: 250px;
-	background-image: url("../img/homepage/header.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 
-}*/
 
 /*CITATIONS STYLING*/
 .citations-body {

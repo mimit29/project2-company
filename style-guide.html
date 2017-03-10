@@ -2,271 +2,311 @@
 
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Style Guide</title>
 
 		<link href="css/main.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Overpass:100,100i,200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> <!-- Font family from Google Fonts -->
 	</head>
 
-	<body>
+	<body style="margin-top: 7rem;">
+		<h1>Citations</h1>
 
-		<!-- INTERACTIVE ELEMENTS SECTION -->
-		<section id="interactive_elements">
-			<h2> Interactive Elements </h2>
+		<nav class="nav">
+        	<div class="nav-element">
+        		<a href="index.html" class="logo">
+        			Main Website
+        		</a>
+        		<div class="navbar">
+        			<a class="nav-link" href="citations.html">Citations page</a>
+        			<a class="nav-link" href="#">Back to Top</a>
+        			<a class="nav-link" href="#">Nav example 1</a>
+        			<a class="nav-link" href="#">Nav example 2</a>
+        			<a class="nav-link" href="#">Nav example 3</a>
+        		</div>
+        	</div>
+        </nav>
 
-			<!-- Default Button Styling Section -->
-			<section>
+		<!-- padding for nav -->
+		<div class="main">
 
-				<h2>Navigation Button</h2>
+			<!-- INTERACTIVE ELEMENTS SECTION -->
+			<section id="interactive_elements">
+				<h2> Interactive Elements </h2>
 
-					<h3>CSS Selector:</h3>
-						<p>.button-nav</p>
+				<!-- Default Button Styling Section -->
+				<section>
 
-					<h3>Sample code:</h3>
-						<div class="code-block">
-							<code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
-						</div>
+					<h2>Navigation Button</h2>
 
-					<h3>Rendered element:</h3>
-						<a class="button-default" href="#">Default Button</a>
+						<h3>CSS Selector:</h3>
+							<p>.button-nav</p>
 
-			</section>
+						<h3>Sample code:</h3>
+							<div class="code-block">
+								<code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+							</div>
 
-			<!-- Default In-Text Link Styling Section -->
-			<section>
-				<h2>In-text Link</h2>
+						<h3>Rendered element:</h3>
+							<a class="button-default" href="#">Default Button</a>
 
-					<h3>CSS Selector:</h3>
-						<p>a</p>
+				</section>
 
-					<h3>Sample Code:</h3>
-						<div class="code-block">
-							<code>&lt;a href="#"&gt;This is an in-text link&lt;/a&gt; within a paragraph.</code>
-						</div>
+				<!-- Default In-Text Link Styling Section -->
+				<section>
+					<h2>In-text Link</h2>
 
-					<h3>Rendered element:</h3>
-						 <a href="#">This is an in-text link</a> within a paragraph.
+						<h3>CSS Selector:</h3>
+							<p>a</p>
 
-			</section>
+						<h3>Sample Code:</h3>
+							<div class="code-block">
+								<code>&lt;a href="#"&gt;This is an in-text link&lt;/a&gt; within a paragraph.</code>
+							</div>
 
-			<!-- Default Input Field Styling Section -->
-			<section> 
-				<h2>Text Input Field</h2>
+						<h3>Rendered element:</h3>
+							 <a href="#">This is an in-text link</a> within a paragraph.
 
-					<h3>CSS Selector:</h3>
-						<p>label, input</p>
+				</section>
 
-					<h3>Sample Code:</h3>
-						<div class="code-block">
-			              	<code>
-				                &lt;form&gt;
-				                <br>
-				                &nbsp;&nbsp;&lt;label for="first-name"&gt;Name&lt;label&gt;
-				                <br>
-				                &nbsp;&nbsp;&lt;input type="text" id="name" name="name" value="Jane Doe"&gt;
-				                <br>
-				                &lt;form&gt;
-			              	</code>
-			          	</div>
+				<!-- Default Input Field Styling Section -->
+				<section> 
+					<h2>Text Input Field</h2>
 
-		          	<h3>Rendered Element:</h3> <!--taken from http://www.w3schools.com/css/css_form.asp-->
-		          		<form>
-		          			<label for="name">Name</label>
-		          			<input type="text" id="name" name="name" placeholder="Jane Doe">
-		          		</form>	
+						<h3>CSS Selector:</h3>
+							<p>label, input</p>
 
-		    </section>
+						<h3>Sample Code:</h3>
+							<div class="code-block">
+				              	<code>
+					                &lt;form&gt;
+					                <br>
+					                &nbsp;&nbsp;&lt;label for="name"&gt;Name&lt;label&gt;
+					                <br>
+					                &nbsp;&nbsp;&lt;input type="text" id="name" name="name" placeholder="Jane Doe"&gt;
+					                <br>
+					                &lt;form&gt; <br>
 
-		    <!-- Default Submit/Reset Button -->
-		    <section>
-		    	<h2>Submit/Reset Buttons</h2>
-		    		<h3>CSS Selector:</h3>
-		    			<p>.button-submit, .button-reset, .button-bubbletea, .button-default</p>
+					                &lt;form&gt;
+					                <br>
+					                &nbsp;&nbsp;&lt;label for="message"&gt;Message&lt;label&gt;
+					                <br>
+					                &nbsp;&nbsp;&lt;textarea placeholder="Enter Your Message Here" class="message-box"&gt;&lt;/textarea&gt;
+					                <br>
+					                &lt;form&gt;
+				              	</code>
+				          	</div>
 
-	    			<h3>Sample Code:</h3>
-	    				<div class="code-block">
-	    					<code>
-	    						&lt;a href="#" class="button-default"&gt;Default&lt;/a&gt;
-	    						<br>
-	    						&lt;a href="#" class="button-bubbletea"&gt;Bubble Tea Buttons&lt;/a&gt;
-	    						<br>
-	    						&lt;a href="#" class="button-submit"&gt;Submit&lt;/a&gt;
-	    						<br>
-	    						&lt;a href="#" class="button-reset"&gt;Reset&lt;/a&gt;
-	    					</code>
-	    				</div>
+			          	<h3>Rendered Element:</h3> <!--taken from http://www.w3schools.com/css/css_form.asp-->
+			          		<form>
+			          			<label for="name">Name</label>
+			          			<input type="text" id="name" name="name" placeholder="Jane Doe">
+			          		</form>	
 
-    				<h3>Rendered Element:</h3>
-    					<div class="grid-row">
-    						<div class="grid-col-1of3">
-    						<a class="button-default" href="#">Default</a>
-    						</div>
-    					</div> 
-    					<div class="grid-row">
-	    					<div class="grid-col-1of3">
-	    						<a class="button-bubbletea" href="#">Bubble Tea Buttons</a> 
-	    					</div>
-	    					<div class="grid-col-1of3">
-	    						<a class="button-submit" href="#">Submit</a> 
-	    					</div>
-	    					<div class="grid-col-1of3">
-	    						<a class="button-reset" href="#">Reset</a> 
+			          		<form>
+			          			<label for="name">Message</label>
+			          			<textarea placeholder="Enter Your Message Here" class="message-box"></textarea>
+					        </form>
+
+			    </section>
+
+			    <!-- Default Submit/Reset Button -->
+			    <section>
+			    	<h2>Submit/Reset Buttons</h2>
+			    		<h3>CSS Selector:</h3>
+			    			<p>.button-submit, .button-reset, .button-bubbletea, .button-default</p>
+
+		    			<h3>Sample Code:</h3>
+		    				<div class="code-block">
+		    					<code>
+		    						&lt;a href="#" class="button-default"&gt;Default&lt;/a&gt;
+		    						<br>
+		    						&lt;a href="#" class="button-bubbletea"&gt;Bubble Tea Buttons&lt;/a&gt;
+		    						<br>
+		    						&lt;a href="#" class="button-submit"&gt;Submit&lt;/a&gt;
+		    						<br>
+		    						&lt;a href="#" class="button-reset"&gt;Reset&lt;/a&gt;
+		    					</code>
+		    				</div>
+
+	    				<h3>Rendered Element:</h3>
+	    					<div class="grid-row">
+	    						<div class="grid-col-12of12">
+	    						<a class="button-default" href="#">Default</a>
+	    						</div>
 	    					</div> 
-    					</div>
+	    					<div class="grid-row">
+		    					<div class="grid-col-12of12">
+		    						<a class="button-bubbletea" href="#">Bubble Tea Buttons</a> 
+		    					</div>
+		    				</div>
+		    				<div class="grid-row">
+		    					<div class="grid-col-12of12">
+		    						<a class="button-submit" href="#">Submit</a> 
+		    					</div>
+		    				</div>
+		    				<div class="grid-row">
+		    					<div class="grid-col-12of12">
+		    						<a class="button-reset" href="#">Reset</a> 
+		    					</div> 
+	    					</div>
+
+	    					<div class="grid-row">
+		    					<div class="grid-col-12of12">
+		    						<a class="button-anchor" href="#">Anchor buttons</a> 
+		    					</div> 
+	    					</div>
+
+				</section>	
+
+			</section> 
+			<!-- END OF INTERACTIVE ELEMENTS SECTION -->
 
 
-			</section>	
 
-		</section> 
-		<!-- END OF INTERACTIVE ELEMENTS SECTION -->
+		<!-- TEXT ELEMENTS SECTION -->
+
+			<section id="text-elements">
+				<!-- heading style section -->
+				<section>
+					<h2>Headings</h2>
+						<h3>CSS selectors:</h3>
+							<p>.header-text, .heading, .sub-heading</p>
+						<h3>Sample Code:</h3>
+							<div class="code-block">
+								<code>
+									&lt;h1 class="head-text"&gt;Headings&lt;/h1&gt; <br>
+									&lt;h2 class="heading"&gt;Headings&lt;/h2&gt; <br>
+									&lt;h3 class="sub-heading"&gt;Headings&lt;/h3&gt; <br>
+									&lt;h3 class="reward-heading"&gt;Rewards Heading&lt;/h3&gt; <br>
+									&lt;h3 class="intext-heading"&gt;Intext heading&lt;/h3&gt; <br>
+									&lt;h3 class="price-heading"&gt;Price heading&lt;/h3&gt; <br>
+								</code>
+							</div>
+
+						<h3>Rendered element:</h3>
+							<h1 class="header-text">Title</h1>
+							<h2 class="heading">Heading</h2>
+							<h3 class="sub-heading">Sub Heading</h3>
+							<h3 class="reward-heading">Rewards heading</h3>
+							<h3 class="intext-heading">In text heading</h3>
+							<h3 class="price-heading">Price heading</h3>
+				</section>
+
+				<!-- paragraph style section -->
+				<section>
+					<h2>Paragraphs</h2>
+						<h3>CSS selectors:</h3>
+							<p>.para</p>
+						<h3>Sample Code:</h3>
+							<div class="code-block">
+								<code>
+									&lt;p class="para"&gt;Paragraph text example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus vestibulum ligula, in feugiat mi tincidunt nec. Aliquam viverra vulputate odio eget accumsan. Aenean faucibus elit elit, quis varius sapien efficitur a. Sed non sapien non risus ullamcorper ornare. Sed non magna quis ex venenatis egestas a eu nibh.&lt;/p&gt;
+								</code>
+							</div>
+						<h3>Rendered element:</h3>
+							<p class="para">Paragraph text example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus vestibulum ligula, in feugiat mi tincidunt nec. Aliquam viverra vulputate odio eget accumsan. Aenean faucibus elit elit, quis varius sapien efficitur a. Sed non sapien non risus ullamcorper ornare. Sed non magna quis ex venenatis egestas a eu nibh. </p>
+				</section>
+
+				<!-- bullet list style section -->
+				<section>
+					<h2>Bullet Lists</h2>
+						<h3>CSS selectors:</h3>
+							<p>ul, .bullet-style</p>
+						<h3>Sample Code:</h3>
+							<div class="code-block">
+								<code>
+									&lt;ul&gt; <br>
+	                				&nbsp;  &lt;li class="bullet-style"&gt;Bullet list example 1&lt;/li&gt;<br>
+	               					&nbsp;  &lt;li class="bullet-style"&gt;Bullet list example 2&lt;/li&gt;<br>
+	              					&lt;/ul&gt;
+								</code>
+							</div>
+						<h3>Rendered element:</h3>
+							<ul>
+								<li class="bullet-style">Bullet list example 1</li>
+								<li class="bullet-style">Bullet list example 2</li>
+							</ul>
+				</section>
+
+				<!-- numbered lists style section -->
+				<section>
+					<h2>Numbered Lists</h2>
+						<h3>CSS selector:</h3>
+							<p>ol, .numbered-list</p>
+						<h3>Sample code:</h3>
+							<div>
+								<code class="code-block">
+									&lt;ol&gt;<br>
+					              	&nbsp; &lt;li class="numbered-style"&gt;Numbered list example 1&lt;/li&gt;<br>
+					              	&nbsp; &lt;li class="numbered-style"&gt;Numbered list example 2&lt;/li&gt;<br>
+					            	&lt;/ol&gt;
+								</code>
+							</div>
+
+						<h3>Rendered element:</h3>
+						<ol>
+			              <li class="numbered-style">Numbered list example 1</li>
+			              <li class="numbered-style">Numbered list example 2</li>
+	            		</ol>
+				</section>
+
+			    <!-- COMBINED ELEMENTS SECTION // -->
+			    <section id="combined_elements">
+			      <h2>Combined Elements</h2>
+
+			      <!-- Default navbar styling section -->
+			      <section>
+			        <h2>Main Navigation</h2>
+
+			          <h3>CSS selector:</h3>
+			            <p>.navbar, .navbar-logo, .navbar-element, .navbar-link, .is-active</p>
+
+			          <h3>Sample Code:</h3>
+			            <div class="code-block">
+			              <code>
+			                &lt;nav class="nav"&gt;
+			                <br>
+			                  &nbsp;&nbsp;&lt;div class="nav-element"&gt;
+			                  <br>
+			                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="index.html" class="logo"&gt;
+			                  <br>
+			                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bubble tea house
+			                  <br>
+			                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;
+			                  <br>
+			                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="navbar"&gt;      
+			                  <br>
+			                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="aboutus.html"&gt;About Us&lt;/a&gt;
+			                  <br>
+			                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="bubbletea.html"&gt;Bubble Tea&lt;/a&gt;
+			                  <br>
+			                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="contact.html"&gt;Contact Us&lt;/a&gt;	
+			                  <br>
+			                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="blog.html"&gt;Blog/Events&lt;/a&gt;	
+			                  <br>
+			                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="profile.html"&gt;Login&lt;/a&gt;	
+			                  <br>
+			                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+			                  <br>
+			                  &nbsp;&nbsp;&lt;/div&gt;
+			                  <br>
+			                  &lt;/nav&gt;		             
+			              </code>
+			            </div>
+
+			          <h3>Rendered Element:</h3> <!--Taken from: http://www.w3schools.com/css/css_navbar.asp-->
+
+			      </section>
 
 
+			    </section>
+			    <!-- // COMBINED ELEMENTS SECTION -->
 
-	<!-- TEXT ELEMENTS SECTION -->
-
-		<section id="text-elements">
-			<!-- heading style section -->
-			<section>
-				<h2>Headings</h2>
-					<h3>CSS selectors:</h3>
-						<p>.header-text, .heading, .sub-heading</p>
-					<h3>Sample Code:</h3>
-						<div class="code-block">
-							<code>
-								&lt;h1 class="head-text"&gt;Headings&lt;/h1&gt; <br>
-								&lt;h2 class="heading"&gt;Headings&lt;/h2&gt; <br>
-								&lt;h3 class="sub-heading"&gt;Headings&lt;/h3&gt;
-							</code>
-						</div>
-
-					<h3>Rendered element:</h3>
-						<h1 class="header-text">Title</h1>
-						<h2 class="heading">Heading</h2>
-						<h3 class="sub-heading">Sub Heading</h3>
 			</section>
 
-			<!-- paragraph style section -->
-			<section>
-				<h2>Paragraphs</h2>
-					<h3>CSS selectors:</h3>
-						<p>.para</p>
-					<h3>Sample Code:</h3>
-						<div class="code-block">
-							<code>
-								&lt;p class="para"&gt;Paragraph text example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus vestibulum ligula, in feugiat mi tincidunt nec. Aliquam viverra vulputate odio eget accumsan. Aenean faucibus elit elit, quis varius sapien efficitur a. Sed non sapien non risus ullamcorper ornare. Sed non magna quis ex venenatis egestas a eu nibh.&lt;/p&gt;
-							</code>
-						</div>
-					<h3>Rendered element:</h3>
-						<p class="para">Paragraph text example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus vestibulum ligula, in feugiat mi tincidunt nec. Aliquam viverra vulputate odio eget accumsan. Aenean faucibus elit elit, quis varius sapien efficitur a. Sed non sapien non risus ullamcorper ornare. Sed non magna quis ex venenatis egestas a eu nibh. </p>
-			</section>
-
-			<!-- bullet list style section -->
-			<section>
-				<h2>Bullet Lists</h2>
-					<h3>CSS selectors:</h3>
-						<p>ul, .bullet-style</p>
-					<h3>Sample Code:</h3>
-						<div class="code-block">
-							<code>
-								&lt;ul&gt; <br>
-                				&nbsp;  &lt;li class="bullet-style"&gt;Bullet list example 1&lt;/li&gt;<br>
-               					&nbsp;  &lt;li class="bullet-style"&gt;Bullet list example 2&lt;/li&gt;<br>
-              					&lt;/ul&gt;
-							</code>
-						</div>
-					<h3>Rendered element:</h3>
-						<ul>
-							<li class="bullet-style">Bullet list example 1</li>
-							<li class="bullet-style">Bullet list example 2</li>
-						</ul>
-			</section>
-
-			<!-- numbered lists style section -->
-			<section>
-				<h2>Numbered Lists</h2>
-					<h3>CSS selector:</h3>
-						<p>ol, .numbered-list</p>
-					<h3>Sample code:</h3>
-						<div>
-							<code class="code-block">
-								&lt;ol&gt;<br>
-				              	&nbsp; &lt;li class="numbered-style"&gt;Numbered list example 1&lt;/li&gt;<br>
-				              	&nbsp; &lt;li class="numbered-style"&gt;Numbered list example 2&lt;/li&gt;<br>
-				            	&lt;/ol&gt;
-							</code>
-						</div>
-
-					<h3>Rendered element:</h3>
-					<ol>
-		              <li class="numbered-style">Numbered list example 1</li>
-		              <li class="numbered-style">Numbered list example 2</li>
-            		</ol>
-			</section>
-
-		    <!-- COMBINED ELEMENTS SECTION // -->
-		    <section id="combined_elements">
-		      <h2>Combined Elements</h2>
-
-		      <!-- Default navbar styling section -->
-		      <section>
-		        <h2>Main Navigation</h2>
-
-		          <h3>CSS selector:</h3>
-		            <p>.navbar, .navbar-logo, .navbar-element, .navbar-link, .is-active</p>
-
-		          <h3>Sample Code:</h3>
-		            <div class="code-block">
-		              <code>
-		                &lt;nav class="nav"&gt;
-		                <br>
-		                  &nbsp;&nbsp;&lt;div class="nav-element"&gt;
-		                  <br>
-		                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="index.html" class="logo"&gt;
-		                  <br>
-		                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bubble tea house
-		                  <br>
-		                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;
-		                  <br>
-		                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="navbar"&gt;      
-		                  <br>
-		                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="aboutus.html"&gt;About Us&lt;/a&gt;
-		                  <br>
-		                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="bubbletea.html"&gt;Bubble Tea&lt;/a&gt;
-		                  <br>
-		                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="contact.html"&gt;Contact Us&lt;/a&gt;	
-		                  <br>
-		                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link href="blog.html"&gt;Blog/Events&lt;/a&gt;	
-		                  <br>
-		                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
-		                  <br>
-		                  &nbsp;&nbsp;&lt;/div&gt;
-		                  <br>
-		                  &lt;/nav&gt;		             
-		              </code>
-		            </div>
-
-		          <h3>Rendered Element:</h3> <!--Taken from: http://www.w3schools.com/css/css_navbar.asp-->
-			        <nav class="nav">
-			        	<div class="nav-element">
-			        		<a href="index.html" class="logo">
-			        			bubble tea house
-			        		</a>
-			        		<div class="navbar">
-			        			<a class="nav-link" href="aboutus.html">About Us</a>
-			        			<a class="nav-link" href="bubbletea.html">Bubble Tea</a>
-			        			<a class="nav-link" href="contact.html">Contact Us</a>
-			        			<a class="nav-link" href="blog.html">Blog/Events</a>
-			        		</div>
-			        	</div>
-			        </nav>
-
-		      </section>
-
-
-		    </section>
-		    <!-- // COMBINED ELEMENTS SECTION -->
-
-		</section>
+		<!-- END OF MAIN CLASS -->
+		</div>	
 	</body>
 
 </html>

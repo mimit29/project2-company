@@ -214,6 +214,13 @@ a .section-box:hover,a .section-box:focus {
 
 /* Page Footer Style */
 .footer {
+	/*position: fixed;
+    bottom: 0;
+    width: 100%;*/
+    /*display: flex;
+    min-height: 10vh;
+    flex-direction: column;
+    flex: 1 0 auto; */
 	background-color: #1f1f1f;
 	padding: 2rem 0;
 }
@@ -222,6 +229,16 @@ a .section-box:hover,a .section-box:focus {
 	color: #636363;
 	margin-right: 2rem;
 }
+
+.site { 
+	display: flex;
+	min-height: 10vh;
+	flex-direction: column;
+ }
+
+ .site-content {
+ 	flex: 1;
+ }
 
 /* --------
 	 GRIDS 

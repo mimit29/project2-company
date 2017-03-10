@@ -50,16 +50,39 @@
 							<p class="para">
 								Just before serving, our hot slow-steeped custom house blend is topped with a delicate float of our house-made vanilla milk foam. If you’re looking for a cool refresher, our cold brew is the perfect blend of bitter and sweet. 
 							</p>
-							<!--Select taken from: https://www.w3schools.com/tags/tag_option.asp-->
-							<select>
-								<option value="" disabled selected>Choose a topping</option>
-								<option value="1">No Topping</option>
-								<option value="2">Pearl</option>
-								<option value="3">Pudding</option>
-								<option value="4">Red Bean</option>
-								<option value="5">Coconut Jelly</option>
-								<option value="6">Grass Jelly</option>
-							</select>
+							<!--Radio Checkbox taken from: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/-->
+							<form>
+								<h5 class="sub-heading">Choose your toppings:</h5>
+								<!--First row checkboxes-->
+								<div class="grid-row">
+									<div class="grid-col-4of12">
+										<input type="checkbox" id="checkbox-1-1" class="regular-checkbox" /> 
+										<label class="checkbox-text"> No Topping </label>
+									</div>
+									<div class="grid-col-4of12">
+										<input type="checkbox" id="checkbox-1-2" class="regular-checkbox" /> 
+										<label class="checkbox-text"> Pearl </label>
+									</div>
+									<div class="grid-col-4of12">
+										<input type="checkbox" id="checkbox-1-3" class="regular-checkbox" />
+										<label class="checkbox-text"> Pudding </label>
+									</div>
+								</div>
+								<!--Second row checkboxes-->
+								<div class="grid-row">
+									<div class="grid-col-4of12">
+										<input type="checkbox" id="checkbox-1-4" class="regular-checkbox" />
+										<label class="checkbox-text"> Red Bean </label>
+									</div>
+									<div class="grid-col-4of12">
+										<input type="checkbox" id="checkbox-1-4" class="regular-checkbox" />
+										<label class="checkbox-text"> Coconut Jelly </label>
+									</div>
+									<div class="grid-col-4of12">
+										<input type="checkbox" id="checkbox-1-4" class="regular-checkbox" />
+										<label class="checkbox-text"> Grass Jelly </label>
+									</div>
+							</form>
 							<br>
 							<br>
 							<a class="button-default" href="checkout-milk-foam-black-coffee.html">Add to Cart</a>

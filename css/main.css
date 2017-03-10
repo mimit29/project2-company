@@ -864,6 +864,7 @@ ol li:before{
 	width: 100%;
 	background-color: #fff;
 	position: fixed;
+	z-index: 100;
 	top: 0;
 	height: 7rem;
 	display: inline-block;

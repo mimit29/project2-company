@@ -195,6 +195,21 @@ section p {
 	padding: 5rem 0;
 }
 
+
+/* BUBBLETEA IMAGE SIZING */
+.bubbletea {
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+
+/* when bubbletea images are hovered, show a line at the bottom */
+a .bubbletea:hover,a .bubbletea:focus {
+	border-bottom: 3px solid #efb99f;
+	margin-bottom: -3px;
+}
+
+
 /* boxed section for profile */
 .section-box {
 	width: 100%;
